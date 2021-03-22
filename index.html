@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>No traje la tarea porque <span id="excusa"> </span></h1>
+    <h1 style="margin-top: 150px;" >
+
+ <h2 id="frase" align="center"></h2>
+
+    <script>
+
+let who = ['el cerdo ','mi perro ','mi abuela ','la tortuga ','mi canario '];
+let what = ['ensucio ','se comío ','pisó ','aplastó ','rompío '];
+let when = ['cuando estaba en el baño','antes de la clase','ahorita','cuando termine','durante mi almuerzo','mientras rezaba'];
+
+function random(){
+    return Math.floor((Math.random() * 4)+1);
+    
+}
+
+
+        document.getElementById("excusa").innerHTML = who[random()]+what[random()]+" la tarea "+when[random()];
+       // document.getElementById("excusa").innerHTML = random();
+        </script> 
+</body>
+</html>
